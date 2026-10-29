@@ -1,3 +1,17 @@
+# vkd3d-nvk — macOS native NVK integration
+
+[Setup, DLSS, tests and release provenance](docs/NATIVE-NVK.md) ·
+[Required NVIDIA macOS driver](https://github.com/HighDelay/nvidia-macos-driver#wine--crossover-native-vulkan) ·
+[YAAGL NVK](https://github.com/HighDelay/yaagl-nvk)
+
+This fork packages the unmodified vkd3d-proton 3.1 x64 DLL pair used by the
+native macOS NVK runtime. Integration changes are in the driver and launcher;
+this fork's changes are documentation and packaging. ZZZ D3D12 and DLSS Super
+Resolution were tested on RTX 2060 SUPER / Tahoe 26.7.1. Frame generation and
+ray tracing remain unqualified. See the guide before installing the DLLs.
+
+---
+
 # vkd3d-proton
 
 vkd3d-proton is a fork of VKD3D, which aims to implement the full Direct3D 12 API on top of Vulkan.
